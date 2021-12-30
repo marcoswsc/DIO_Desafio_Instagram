@@ -1,11 +1,10 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
 }
+
 body {
     background-color: #fafafa;
     width: 100%;
@@ -14,14 +13,18 @@ body {
     margin: auto;
     padding: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content:start;
+    flex-direction: column;
+    
 }
 main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    height: 100vh; 
+    
+    height: 85vh;
+    
       
 }
 
@@ -44,7 +47,7 @@ main {
     align-items: center;
     justify-content:space-around;
     flex-direction: column;
-    margin-left: 5px;;
+    margin-left: 5px;
     width: 60%;
     height: 32rem;
 
@@ -56,7 +59,7 @@ main {
     align-items: center;
     justify-content:space-evenly;
     flex-direction: column;
-    border: 1px solid rgb(180, 180, 180);
+    border: 1px solid rgb(218, 218, 218);
     height: 19rem;
     width: 90%;
 }
@@ -71,15 +74,14 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    
-    
+        
 }
 
 .group_dados input {  
     background-color: rgb(250, 250, 250);
     width: 90%;
     padding: 10px;
-    font-size: 10px;
+    font-size: 12px;
     border: 1px solid rgb(180, 180, 180);
     border-radius:2px;
     margin: 3px;
@@ -88,8 +90,10 @@ main {
 .group_dados button {  
     background-color: rgb(172, 222, 255);
     width: 90%;
+    height: 2rem;
     padding: 4px;
     font-size: 10px;
+    font-weight: bold;
     border: 1px solid rgb(159, 212, 248);
     border-radius:3px;
     margin: 10px;
@@ -113,18 +117,16 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
-    border: 1px solid rgb(180, 180, 180);
-    height: 10vh;
+    border: 1px solid rgb(218, 218, 218);
+    height: 4rem;
     width: 90%;
     font-size: 14px;
-    /* color: gray; */
+    
 }
  .cadastro a {
      color: rgb(14, 159, 255);
      font-weight: bold;
-     
  }
-
 
  .app {  
     display: flex;
@@ -132,13 +134,12 @@ main {
    justify-content: center;
    flex-direction: column;
    width: 90%;
-   height: 8rem;
+   height: 6rem;
    
 }
 
 .app p {  
    margin: 20px
-   
     
  }
 
@@ -170,3 +171,164 @@ main {
     
 }
 
+
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 6vh;
+
+}
+
+footer a {
+    color: rgb(107, 107, 107);
+    font-size: 13px;
+    padding: 5px;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 85vh;
+                  
+    }
+   
+    .main-right {
+    
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        margin-left: 5px;;
+        width: 75%;
+        height: 32rem;
+    
+    }
+    
+    .app_download {
+        height: 4em;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-left{
+        display: none;
+    }
+
+    .main-right {
+    
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        margin-left: 5px;
+        width: 60%;
+        height: 32rem;
+    
+    }
+    
+    .user {
+        width: 85%;
+        height: 20rem;
+    }
+
+    .group_dados input {  
+        width: 85%;
+    }
+    
+    .group_dados button {  
+        width: 85%;
+        
+    }
+    
+    .cadastro {
+        width: 85%;
+    }
+
+    .app_download {
+        width: 9rem;
+    }
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+    main {
+        width: 100%;
+        height: 80vh;
+    }
+     
+    .main-right {
+        width: 100%;
+        height: 33rem;
+    }
+
+    .user {
+        background-color: #fafafa;
+        border: none;
+        width: 100%;
+        height: 90rem;
+    }
+
+    .group_dados {
+        margin-top: 8%;
+    }
+ 
+    .group_dados input {  
+        width: 70%;
+    }
+    
+    .group_dados button {  
+        width: 70%;
+        margin-bottom: 15%;
+    }
+
+    #forget {
+        margin-top: 5%;
+    }
+    
+    .cadastro {
+        background-color: #fafafa;
+        border: none;
+        width: 100%;
+        height: 20rem;
+        margin-top: 20%;
+    }
+
+    .app {  
+        margin-top: 20%;
+    }
+    
+    .app_download {
+        height: 4em;
+    }
+
+    footer {
+        width: 90%;
+        height: 15vh;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .group_dados input {  
+        width: 80%;
+    }
+    
+    .group_dados button {  
+        width: 80%;
+        
+    }
+
+}
